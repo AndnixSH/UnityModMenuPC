@@ -26,15 +26,15 @@ public class PCModMenu : MonoBehaviour
     // Remember Y position
     public static int btnY, mulY;
 
-    // Must be static and have other name than OnGUI if you create this as new class.
+    // Must be static if you create this as new class in dnSpy.
     // Find active classes like UIRoot, UIdrawcall, Soundmanager or something similar
     // and add:
     // public void OnGUI()
     // {
-    //   	MyClassNameOfModMenu.MyGUI();
+    //   	MyClassNameOfModMenu.OnGUI();
     // }
     // For unity editor: public void OnGUI()
-    // For dnSpy: public static void yourname()
+    // For dnSpy: public static void OnGUI()
     public void OnGUI()
     {
         // Load textured on Start one time to avoid high GPU usage.
